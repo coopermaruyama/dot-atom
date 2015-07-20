@@ -1,0 +1,49 @@
+tests:
+  group: "convertify"
+  title: "Convertify TDD"
+  icon: "icon-zap"
+  paths: [
+    "/Users/cooperm/sites/cfy/tests"
+  ]
+  settings:
+    "tree-view":
+      hideIgnoredNames: true
+      hideVcsIgnoredFiles: true
+      sortFoldersBeforeFiles: true
+      showOnRightSide: false
+packages:
+  group: "convertify"
+  title: "Convertify Packages"
+  icon: "icon-rocket"
+  paths: [
+    "/Users/cooperm/sites/cfy/packages"
+  ]
+"cfy-develop":
+  group: "convertify"
+  title: "Convertify Develop"
+  icon: "icon-flame"
+  paths: [
+    "/Users/cooperm/sites/cfy/packages/cfy-tracking"
+    "/Users/cooperm/sites/cfy/packages/cfy-lib"
+    "/Users/cooperm/sites/cfy/packages/app-core"
+    "/Users/cooperm/sites/cfy/packages/cfy-proxy"
+  ]
+cfy:
+  title: "cfy"
+  paths: [
+    "/Users/cooperm/sites/cfy"
+  ]
+"develop-module":
+  group: "convertify"
+  title: "Develop Module"
+  icon: "icon-flame"
+  paths: [
+    "/Users/cooperm/sites/cfy/packages/convertify:events"
+  ]
+"cfy-all":
+  group: "convertify"
+  title: "All Files (Convertify)"
+  icon: "icon-home"
+  paths: [
+    "/Users/cooperm/sites/cfy"
+  ]

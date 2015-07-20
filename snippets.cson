@@ -1,0 +1,306 @@
+'.text.html':
+  'jQuery script':
+    'prefix': 'jquery'
+    'body': '<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>'
+
+
+###=============================================================================
+= JS =
+----------------------------------------------------------------------------=###
+'.source.js,.source.css,.source.scss, .source.less':
+  'Comment - hr':
+    'prefix': 'hr'
+    'body': """
+      /*=============================================================================
+      =    ${1:Comment Section}
+      =============================================================================*/
+    """
+
+  'Comment - Subsection comment':
+    'prefix': 'comm-sub'
+    'body': """
+      /*-------  ${1:Subsection comment block}  -------*/$2
+    """
+
+  'Comment - 80 Col Header':
+    'prefix': 'h1'
+    'body': """
+      /*****************************************************************************/
+      /* ${1:Section Title} */
+      /*****************************************************************************/\n$2
+    """
+
+# Attribute Module Pattern for CSS
+'.source.scss,.source.sass,.source.css, .source.less':
+  'Atribute Module Pattern: Define new style':
+    'prefix': 'am'
+    'body': '[am-${1:ModuleName}${2:~="${3:value}"}] {\n  $4\n}'
+
+
+###=============================================================================
+= Jasmine =
+----------------------------------------------------------------------------=###
+'.source.spec.js':
+  'spyOn':
+    'prefix': 'spy'
+    'body':   'spyOn(${1:target}, "${2:method}");'
+  'spyOn.and.callThrough':
+    'prefix': 'spyc'
+    'body':   'spyOn(${1:target}, "${2:method}").and.callThrough();'
+  'spyOn.and.returnValue':
+    'prefix': 'spyv'
+    'body':   'spyOn(${1:target}, "${2:method}").and.returnValue(${3:value});'
+  'spyOn.and.callFake':
+    'prefix': 'spyf'
+    'body':   'spyOn(${1:target}, "${2:method}").and.callFake(${3:value});'
+  'spyOn.and.throwError':
+    'prefix': 'spye'
+    'body':   'spyOn(${1:target}, "${2:method}").and.throwError("${3:error}");'
+  'jasmine.createSpy':
+    'prefix': 'cspy'
+    'body':   '${1:target} = jasmine.createSpy("${1:target}");'
+  'jasmine.createSpyObj':
+    'prefix': 'spyo'
+    'body':   '${1:obj} = jasmine.createSpyObj("${1:obj}", ["${2:method}"]);'
+  'Expect not to be defined':
+    'prefix': 'notd'
+    'body':   'expect($1).not.toBeDefined();'
+  'Expect not to be falsy':
+    'prefix': 'notf'
+    'body':   'expect(${1:target}).not.toBeFalsy();'
+  'Expect not to be null':
+    'prefix': 'notn'
+    'body':   'expect(${1:target}).not.toBeNull();'
+  'Expect not to be truthy':
+    'prefix': 'nott'
+    'body':   'expect(${1:target}).not.toBeTruthy();'
+  'Expect not to contain':
+    'prefix': 'notc'
+    'body':   'expect(${1:target}).not.toContain(${2:value});'
+  'Expect to be defined':
+    'prefix': 'ed'
+    'body': 'expect($1).toBeDefined();'
+  'Expect to be falsy':
+    'prefix': 'ef'
+    'body':   'expect(${1:target}).toBeFalsy();'
+  'Expect to be null':
+    'prefix': 'en'
+    'body':   'expect(${1:target}).toBeNull();'
+  'Expect to be truthy':
+    'prefix': 'et'
+    'body':   'expect(${1:target}).toBeTruthy();'
+  'Expect to contain':
+    'prefix': 'ec'
+    'body':   'expect(${1:target}).toContain(${2:value});'
+  'Expect to equal':
+    'prefix': 'ee'
+    'body':   'expect(${1:target}).toEqual(${2:value});'
+  'Expect to match':
+    'prefix': 'em'
+    'body':   'expect(${1:target}).toMatch(${2:pattern});'
+  'Expect to have been called':
+    'prefix': 'ebc'
+    'body':   'expect(${1:target}).toHaveBeenCalled();'
+  'Expect to have been called with':
+    'prefix': 'ebcw'
+    'body':   'expect(${1:target}).toHaveBeenCalledWith("${2:value}");'
+  'Expect to throw error':
+    'prefix': 'ete'
+    'body':   'expect(${1:target}).toThrowError("${2:error}");'
+  'Expect':
+    'prefix': 'ex'
+    'body': 'expect($1)$2;'
+
+  'Expect to have any':
+    prefix: 'ethanyk'
+    body: """
+      expect(${1:target}).to.have.any.keys("${2:key1}", "${3:key2}");
+    """
+  'Expect to have all':
+    prefix: 'ethallk'
+    body:   'expect(${1:target}).to.have.all.keys("${2:key1}", "${3:key2}");'
+  'Expect to be at least':
+    prefix: 'ethloal'
+    body:   'expect(${1:target}).to.be.at.least(${2:n});'
+  'Expect to be at most':
+    prefix: 'ethloam'
+    body:   'expect(${1:target}).to.be.at.most(${2:n});'
+
+  'Describe block':
+    'prefix': 'des'
+    'body': """
+      describe("${1:description}", function () {
+        $2
+      });
+    """
+  'It block':
+    'prefix': 'it'
+    'body': """
+      it("${1:description}", function () {
+        $2
+      });
+    """
+  'It Async block':
+    'prefix': 'itA'
+    'body': """
+      it("${1:description}", function (${2:done}) {
+        $3
+        ${2:done}();
+      });
+    """
+  'After-Each block':
+    'prefix': 'aft'
+    'body': """
+      afterEach(function () {
+        $1
+      });
+    """
+  'After-Each Async block':
+    'prefix': 'aftA'
+    'body': """
+      afterEach(function (${1:done}) {
+        $2
+        ${1:done}();
+      });
+    """
+  'Before-Each block':
+    'prefix': 'bef'
+    'body': """
+      beforeEach(function () {
+        $1
+      });
+    """
+  'Before-Each Async block':
+    'prefix': 'befA'
+    'body': """
+      beforeEach(function (${1:done}) {
+        $2
+        ${1:done}();
+      });
+    """
+  'Runs':
+    'prefix': 'ru'
+    'body': """
+      runs(function () {
+        $1
+      });
+    """
+
+
+###=============================================================================
+= Coffeescript =
+----------------------------------------------------------------------------=###
+'.source.coffee':
+
+  'ViewModel - Collection':
+    'prefix': 'vmc'
+    'body': """
+      Template.${1:Items}.viewmodel "$1", ${2:${3:viewmodelToExtend},} {
+        $1: -> $1.find()
+        ${4:active$1: null
+        }$5
+      }, "$1"
+    """
+
+  'ViewModel - Item':
+    'prefix': 'vmi'
+    'body': """
+      Template.${1:item}.viewmodel ((data) ->
+        "$1\_\#\{data._id\}"  # use as `n`: ViewModel.byId(n)
+      ), ${2:${3:viewmodelToExtend},} ((data) ->
+        id: data._id
+        $1: -> $1.findOne @id()
+        ${4:activate: -> @parent().active @id()
+        }${5:isActive: -> @parent().active() is @id()
+        }$9
+      ), ["${6:helper1}"${7:, "${8:helper2}"}]
+    """
+
+  'Coffeescript Comment - Todo Block':
+    'prefix': 'comm-todo-coffee'
+    'body': """
+      ##
+      ## TODO: ${1: Some task}
+      ##
+    """
+  # subection
+  'Coffeescript Comment - Subsection':
+    'prefix': 'cs'
+    # uncomment when substitutions become supported
+    # 'body': '# -${1/(.)/-/ig}\n# ${1:Some Comment}'
+    'body': """
+      # ------------------------------------------------------------------------------
+      # ${1: Some comment}
+    """
+  # header
+  'Coffeescript Comment - Header section':
+    'prefix': 'hr'
+    'body': """
+      ###=============================================================================
+      = ${1:Comment} =
+      ----------------------------------------------------------------------------=###
+      $2
+    """
+  # block
+  'Coffeescript Comment - Block section':
+    'prefix': 'comm-block'
+    'body': """
+      ###
+       ##  ${1:Shared Functions: Foobar Widget}
+       ##
+       ${2:##  @${3:description} ${4}
+       }##
+       ###
+       ${6}
+    """
+  'Describe block':
+    'prefix': 'des'
+    'body': """
+      describe "${1:description}", ->
+        $2
+    """
+  'It block':
+    'prefix': 'it'
+    'body': """
+      it "${1:description}", ->
+        $2
+    """
+  'It Async block':
+    'prefix': 'itA'
+    'body': """
+      it "${1:description}", (${2:done}) ->
+        $3
+        ${2:done}();
+    """
+  'After-Each block':
+    'prefix': 'aft'
+    'body': """
+      afterEach ->
+        $1
+    """
+  'After-Each block':
+    'prefix': 'aftA'
+    'body': """
+      afterEach (${1:done}) ->
+        $2
+        ${1:done}();
+    """
+  'Before-Each block':
+    'prefix': 'bef'
+    'body': """
+      beforeEach ->
+        $1
+    """
+  'Before-Each Async block':
+    'prefix': 'befA'
+    'body': """
+      beforeEach (${1:done}) ->
+        $2
+        ${1:done}();
+    """
+  'Runs':
+    'prefix': 'ru'
+    'body': """
+      runs ->
+        $1
+    """
