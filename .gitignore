@@ -11,3 +11,5 @@ dev
 compile-cache
 node_modules/
 dev
+packages/
+atom-shell/
