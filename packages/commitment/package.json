@@ -1,0 +1,429 @@
+{
+  "name": "commitment",
+  "main": "./lib/commitment",
+  "scripts": {
+    "lint": "coffeelint lib spec",
+    "apm": "apm test",
+    "test": "npm run lint && npm run apm"
+  },
+  "version": "0.1.3",
+  "description": "A commit message generator for atom",
+  "activationCommands": {
+    "atom-workspace": "commitment:toggle"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janraasch/atom-commitment"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "react-atom-fork": "^0.11.5",
+    "reactionary-atom-fork": "^1.0.0",
+    "javascript-commitment": "^0.1.2"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.0",
+    "coffeelint": "^1.8.1",
+    "sinon": "^1.12.2"
+  },
+  "readme": "# commitment [![Build Status][travis-image]][travis-url]\n\n> Atom adoption of the great [Commitment][commitment-url] project. For a quick laugh and some **random commit message** in your clipboard and status bar.\n\n*Visit [http://whatthecommit.com/](http://whatthecommit.com/) for the web version.*\n\n## Usage\n\nHit `Ctrl+Alt+L`,`Ctrl+Alt+O`,`Ctrl+Alt+L` and you will see a random commit message printed to the status bar. The commit message is also added to your clipboard, so paste away.\n\n![screenshot](https://raw.githubusercontent.com/janraasch/atom-commitment/master/screenshot.png)\n\nThe messsage and the permalink to the [web version](http://whatthecommit.com/) are printed to the console as well.\n\n```bash\nCommitment:\n(\\ /)\n(O.o)\n(> <) Bunny approves these changes.\nPermalink: http://whatthecommit.com/0e0c1a4060a298158f3c4ef526f03f86\n```\n\n## License\n\n[MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Jan Raasch](http://janraasch.com)\n\n[commitment-url]: https://github.com/ngerakines/commitment\n\n[travis-url]: http://travis-ci.org/janraasch/atom-commitment\n[travis-image]: https://travis-ci.org/janraasch/atom-commitment.svg?branch=master\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/janraasch/atom-commitment/issues"
+  },
+  "homepage": "https://github.com/janraasch/atom-commitment",
+  "_id": "commitment@0.1.3",
+  "_shasum": "63bc5a575a3b40fb1e0925b2d9cb5c594b2fffca",
+  "_resolved": "file:../d-115516-94893-pir1p4/package.tgz",
+  "_from": "../d-115516-94893-pir1p4/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "javascript-commitment",
+        "version": "0.1.2",
+        "path": "node_modules/javascript-commitment/index.js"
+      },
+      {
+        "name": "react-atom-fork",
+        "version": "0.11.5",
+        "path": "node_modules/react-atom-fork/react.js"
+      },
+      {
+        "name": "envify",
+        "version": "2.0.1",
+        "path": "node_modules/react-atom-fork/node_modules/envify/index.js"
+      },
+      {
+        "name": "esprima-fb",
+        "version": "3001.1.0-dev-harmony-fb",
+        "path": "node_modules/react-atom-fork/node_modules/envify/node_modules/esprima-fb/esprima.js"
+      },
+      {
+        "name": "jstransform",
+        "version": "3.0.0",
+        "path": "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/src/jstransform.js"
+      },
+      {
+        "name": "base62",
+        "version": "0.1.1",
+        "path": "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/base62/base62.js"
+      },
+      {
+        "name": "source-map",
+        "version": "0.1.31",
+        "path": "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map.js"
+      },
+      {
+        "name": "amdefine",
+        "version": "0.1.1",
+        "path": "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine/amdefine.js"
+      },
+      {
+        "name": "through",
+        "version": "2.3.7",
+        "path": "node_modules/react-atom-fork/node_modules/envify/node_modules/through/index.js"
+      },
+      {
+        "name": "xtend",
+        "version": "2.1.2",
+        "path": "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/index.js"
+      },
+      {
+        "name": "object-keys",
+        "version": "0.4.0",
+        "path": "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/node_modules/object-keys/index.js"
+      },
+      {
+        "name": "reactionary-atom-fork",
+        "version": "1.0.0",
+        "path": "node_modules/reactionary-atom-fork/lib/reactionary.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        "coffeelint.json",
+        "node_modules/javascript-commitment/package.json",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/esprima-fb/component.json",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/esprima-fb/package.json",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/base62/package.json",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine/package.json",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/package.json",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/package.json",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/through/package.json",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/node_modules/object-keys/package.json",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/package.json",
+        "node_modules/react-atom-fork/node_modules/envify/package.json",
+        "node_modules/react-atom-fork/package.json",
+        "node_modules/reactionary-atom-fork/package.json",
+        "package.json"
+      ],
+      ".coffee": [
+        "lib/commitment-view.coffee",
+        "lib/commitment.coffee"
+      ],
+      ".js": [
+        "node_modules/javascript-commitment/commit_messages.js",
+        "node_modules/javascript-commitment/index.js",
+        "node_modules/react-atom-fork/addons.js",
+        "node_modules/react-atom-fork/dist/JSXTransformer.js",
+        "node_modules/react-atom-fork/dist/react-with-addons.js",
+        "node_modules/react-atom-fork/dist/react-with-addons.min.js",
+        "node_modules/react-atom-fork/dist/react.js",
+        "node_modules/react-atom-fork/dist/react.min.js",
+        "node_modules/react-atom-fork/lib/AutoFocusMixin.js",
+        "node_modules/react-atom-fork/lib/BeforeInputEventPlugin.js",
+        "node_modules/react-atom-fork/lib/CSSCore.js",
+        "node_modules/react-atom-fork/lib/CSSProperty.js",
+        "node_modules/react-atom-fork/lib/CSSPropertyOperations.js",
+        "node_modules/react-atom-fork/lib/CallbackQueue.js",
+        "node_modules/react-atom-fork/lib/ChangeEventPlugin.js",
+        "node_modules/react-atom-fork/lib/ClientReactRootIndex.js",
+        "node_modules/react-atom-fork/lib/CompositionEventPlugin.js",
+        "node_modules/react-atom-fork/lib/DOMChildrenOperations.js",
+        "node_modules/react-atom-fork/lib/DOMProperty.js",
+        "node_modules/react-atom-fork/lib/DOMPropertyOperations.js",
+        "node_modules/react-atom-fork/lib/Danger.js",
+        "node_modules/react-atom-fork/lib/DefaultEventPluginOrder.js",
+        "node_modules/react-atom-fork/lib/EnterLeaveEventPlugin.js",
+        "node_modules/react-atom-fork/lib/EventConstants.js",
+        "node_modules/react-atom-fork/lib/EventListener.js",
+        "node_modules/react-atom-fork/lib/EventPluginHub.js",
+        "node_modules/react-atom-fork/lib/EventPluginRegistry.js",
+        "node_modules/react-atom-fork/lib/EventPluginUtils.js",
+        "node_modules/react-atom-fork/lib/EventPropagators.js",
+        "node_modules/react-atom-fork/lib/ExecutionEnvironment.js",
+        "node_modules/react-atom-fork/lib/HTMLDOMPropertyConfig.js",
+        "node_modules/react-atom-fork/lib/LinkedStateMixin.js",
+        "node_modules/react-atom-fork/lib/LinkedValueUtils.js",
+        "node_modules/react-atom-fork/lib/LocalEventTrapMixin.js",
+        "node_modules/react-atom-fork/lib/MobileSafariClickEventPlugin.js",
+        "node_modules/react-atom-fork/lib/PooledClass.js",
+        "node_modules/react-atom-fork/lib/React.js",
+        "node_modules/react-atom-fork/lib/ReactBrowserComponentMixin.js",
+        "node_modules/react-atom-fork/lib/ReactBrowserEventEmitter.js",
+        "node_modules/react-atom-fork/lib/ReactCSSTransitionGroup.js",
+        "node_modules/react-atom-fork/lib/ReactCSSTransitionGroupChild.js",
+        "node_modules/react-atom-fork/lib/ReactChildren.js",
+        "node_modules/react-atom-fork/lib/ReactComponent.js",
+        "node_modules/react-atom-fork/lib/ReactComponentBrowserEnvironment.js",
+        "node_modules/react-atom-fork/lib/ReactComponentWithPureRenderMixin.js",
+        "node_modules/react-atom-fork/lib/ReactCompositeComponent.js",
+        "node_modules/react-atom-fork/lib/ReactContext.js",
+        "node_modules/react-atom-fork/lib/ReactCurrentOwner.js",
+        "node_modules/react-atom-fork/lib/ReactDOM.js",
+        "node_modules/react-atom-fork/lib/ReactDOMButton.js",
+        "node_modules/react-atom-fork/lib/ReactDOMComponent.js",
+        "node_modules/react-atom-fork/lib/ReactDOMForm.js",
+        "node_modules/react-atom-fork/lib/ReactDOMIDOperations.js",
+        "node_modules/react-atom-fork/lib/ReactDOMImg.js",
+        "node_modules/react-atom-fork/lib/ReactDOMInput.js",
+        "node_modules/react-atom-fork/lib/ReactDOMOption.js",
+        "node_modules/react-atom-fork/lib/ReactDOMSelect.js",
+        "node_modules/react-atom-fork/lib/ReactDOMSelection.js",
+        "node_modules/react-atom-fork/lib/ReactDOMTextarea.js",
+        "node_modules/react-atom-fork/lib/ReactDefaultBatchingStrategy.js",
+        "node_modules/react-atom-fork/lib/ReactDefaultInjection.js",
+        "node_modules/react-atom-fork/lib/ReactDefaultPerf.js",
+        "node_modules/react-atom-fork/lib/ReactDefaultPerfAnalysis.js",
+        "node_modules/react-atom-fork/lib/ReactDescriptor.js",
+        "node_modules/react-atom-fork/lib/ReactDescriptorValidator.js",
+        "node_modules/react-atom-fork/lib/ReactEmptyComponent.js",
+        "node_modules/react-atom-fork/lib/ReactErrorUtils.js",
+        "node_modules/react-atom-fork/lib/ReactEventEmitterMixin.js",
+        "node_modules/react-atom-fork/lib/ReactEventListener.js",
+        "node_modules/react-atom-fork/lib/ReactInjection.js",
+        "node_modules/react-atom-fork/lib/ReactInputSelection.js",
+        "node_modules/react-atom-fork/lib/ReactInstanceHandles.js",
+        "node_modules/react-atom-fork/lib/ReactLink.js",
+        "node_modules/react-atom-fork/lib/ReactMarkupChecksum.js",
+        "node_modules/react-atom-fork/lib/ReactMount.js",
+        "node_modules/react-atom-fork/lib/ReactMultiChild.js",
+        "node_modules/react-atom-fork/lib/ReactMultiChildUpdateTypes.js",
+        "node_modules/react-atom-fork/lib/ReactOwner.js",
+        "node_modules/react-atom-fork/lib/ReactPerf.js",
+        "node_modules/react-atom-fork/lib/ReactPropTransferer.js",
+        "node_modules/react-atom-fork/lib/ReactPropTypeLocationNames.js",
+        "node_modules/react-atom-fork/lib/ReactPropTypeLocations.js",
+        "node_modules/react-atom-fork/lib/ReactPropTypes.js",
+        "node_modules/react-atom-fork/lib/ReactPutListenerQueue.js",
+        "node_modules/react-atom-fork/lib/ReactReconcileTransaction.js",
+        "node_modules/react-atom-fork/lib/ReactRootIndex.js",
+        "node_modules/react-atom-fork/lib/ReactServerRendering.js",
+        "node_modules/react-atom-fork/lib/ReactServerRenderingTransaction.js",
+        "node_modules/react-atom-fork/lib/ReactStateSetters.js",
+        "node_modules/react-atom-fork/lib/ReactTestUtils.js",
+        "node_modules/react-atom-fork/lib/ReactTextComponent.js",
+        "node_modules/react-atom-fork/lib/ReactTransitionChildMapping.js",
+        "node_modules/react-atom-fork/lib/ReactTransitionEvents.js",
+        "node_modules/react-atom-fork/lib/ReactTransitionGroup.js",
+        "node_modules/react-atom-fork/lib/ReactUpdates.js",
+        "node_modules/react-atom-fork/lib/ReactWithAddons.js",
+        "node_modules/react-atom-fork/lib/SVGDOMPropertyConfig.js",
+        "node_modules/react-atom-fork/lib/SelectEventPlugin.js",
+        "node_modules/react-atom-fork/lib/ServerReactRootIndex.js",
+        "node_modules/react-atom-fork/lib/SimpleEventPlugin.js",
+        "node_modules/react-atom-fork/lib/SyntheticClipboardEvent.js",
+        "node_modules/react-atom-fork/lib/SyntheticCompositionEvent.js",
+        "node_modules/react-atom-fork/lib/SyntheticDragEvent.js",
+        "node_modules/react-atom-fork/lib/SyntheticEvent.js",
+        "node_modules/react-atom-fork/lib/SyntheticFocusEvent.js",
+        "node_modules/react-atom-fork/lib/SyntheticInputEvent.js",
+        "node_modules/react-atom-fork/lib/SyntheticKeyboardEvent.js",
+        "node_modules/react-atom-fork/lib/SyntheticMouseEvent.js",
+        "node_modules/react-atom-fork/lib/SyntheticTouchEvent.js",
+        "node_modules/react-atom-fork/lib/SyntheticUIEvent.js",
+        "node_modules/react-atom-fork/lib/SyntheticWheelEvent.js",
+        "node_modules/react-atom-fork/lib/Transaction.js",
+        "node_modules/react-atom-fork/lib/ViewportMetrics.js",
+        "node_modules/react-atom-fork/lib/accumulate.js",
+        "node_modules/react-atom-fork/lib/adler32.js",
+        "node_modules/react-atom-fork/lib/cloneWithProps.js",
+        "node_modules/react-atom-fork/lib/containsNode.js",
+        "node_modules/react-atom-fork/lib/copyProperties.js",
+        "node_modules/react-atom-fork/lib/createArrayFrom.js",
+        "node_modules/react-atom-fork/lib/createFullPageComponent.js",
+        "node_modules/react-atom-fork/lib/createNodesFromMarkup.js",
+        "node_modules/react-atom-fork/lib/cx.js",
+        "node_modules/react-atom-fork/lib/dangerousStyleValue.js",
+        "node_modules/react-atom-fork/lib/emptyFunction.js",
+        "node_modules/react-atom-fork/lib/emptyObject.js",
+        "node_modules/react-atom-fork/lib/escapeTextForBrowser.js",
+        "node_modules/react-atom-fork/lib/flattenChildren.js",
+        "node_modules/react-atom-fork/lib/focusNode.js",
+        "node_modules/react-atom-fork/lib/forEachAccumulated.js",
+        "node_modules/react-atom-fork/lib/getActiveElement.js",
+        "node_modules/react-atom-fork/lib/getEventKey.js",
+        "node_modules/react-atom-fork/lib/getEventModifierState.js",
+        "node_modules/react-atom-fork/lib/getEventTarget.js",
+        "node_modules/react-atom-fork/lib/getMarkupWrap.js",
+        "node_modules/react-atom-fork/lib/getNodeForCharacterOffset.js",
+        "node_modules/react-atom-fork/lib/getReactRootElementInContainer.js",
+        "node_modules/react-atom-fork/lib/getTextContentAccessor.js",
+        "node_modules/react-atom-fork/lib/getUnboundedScrollPosition.js",
+        "node_modules/react-atom-fork/lib/hyphenate.js",
+        "node_modules/react-atom-fork/lib/hyphenateStyleName.js",
+        "node_modules/react-atom-fork/lib/instantiateReactComponent.js",
+        "node_modules/react-atom-fork/lib/invariant.js",
+        "node_modules/react-atom-fork/lib/isEventSupported.js",
+        "node_modules/react-atom-fork/lib/isNode.js",
+        "node_modules/react-atom-fork/lib/isTextInputElement.js",
+        "node_modules/react-atom-fork/lib/isTextNode.js",
+        "node_modules/react-atom-fork/lib/joinClasses.js",
+        "node_modules/react-atom-fork/lib/keyMirror.js",
+        "node_modules/react-atom-fork/lib/keyOf.js",
+        "node_modules/react-atom-fork/lib/mapObject.js",
+        "node_modules/react-atom-fork/lib/memoizeStringOnly.js",
+        "node_modules/react-atom-fork/lib/merge.js",
+        "node_modules/react-atom-fork/lib/mergeHelpers.js",
+        "node_modules/react-atom-fork/lib/mergeInto.js",
+        "node_modules/react-atom-fork/lib/mixInto.js",
+        "node_modules/react-atom-fork/lib/monitorCodeUse.js",
+        "node_modules/react-atom-fork/lib/onlyChild.js",
+        "node_modules/react-atom-fork/lib/performance.js",
+        "node_modules/react-atom-fork/lib/performanceNow.js",
+        "node_modules/react-atom-fork/lib/setInnerHTML.js",
+        "node_modules/react-atom-fork/lib/shallowEqual.js",
+        "node_modules/react-atom-fork/lib/shouldUpdateReactComponent.js",
+        "node_modules/react-atom-fork/lib/toArray.js",
+        "node_modules/react-atom-fork/lib/traverseAllChildren.js",
+        "node_modules/react-atom-fork/lib/update.js",
+        "node_modules/react-atom-fork/lib/warning.js",
+        "node_modules/react-atom-fork/node_modules/envify/custom.js",
+        "node_modules/react-atom-fork/node_modules/envify/index.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/esprima-fb/bin/esparse.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/esprima-fb/bin/esvalidate.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/esprima-fb/esprima.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/esprima-fb/examples/detectnestedternary.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/esprima-fb/examples/findbooleantrap.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/esprima-fb/examples/tokendist.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/base62/base62.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/Makefile.dryice.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/assert-shim.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/mini-require.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/suffix-browser.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/test-prefix.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/test-suffix.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/array-set.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/base64-vlq.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/base64.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/binary-search.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/source-map-consumer.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/source-map-generator.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/source-node.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/util.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine/amdefine.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine/intercept.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/src/__tests__/jstransform-test.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/src/docblock.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/src/jstransform.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/src/utils.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-arrow-function-visitors-test.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-class-visitors-test.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-object-short-notation-visitors-test.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-rest-param-visitors-test.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-template-visitors-test.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors/es6-arrow-function-visitors.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors/es6-class-visitors.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors/es6-object-short-notation-visitors.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors/es6-rest-param-visitors.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors/es6-template-visitors.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/through/index.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/has-keys.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/index.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/mutable.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/node_modules/object-keys/foreach.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/node_modules/object-keys/index.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/node_modules/object-keys/isArguments.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/node_modules/object-keys/shim.js",
+        "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend/test.js",
+        "node_modules/react-atom-fork/node_modules/envify/test.js",
+        "node_modules/react-atom-fork/node_modules/envify/visitors.js",
+        "node_modules/react-atom-fork/react.js",
+        "node_modules/reactionary-atom-fork/lib/dom-helpers.js",
+        "node_modules/reactionary-atom-fork/lib/reactionary.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "lib",
+          "spec"
+        ],
+        "dependencies": {
+          "react-atom-fork": "^0.11.5",
+          "reactionary-atom-fork": "^1.0.0",
+          "javascript-commitment": "^0.1.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/react-atom-fork",
+          "node_modules/react-atom-fork/dist",
+          "node_modules/react-atom-fork/lib"
+        ],
+        "dependencies": {
+          "envify": "^2.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/react-atom-fork/node_modules/envify"
+        ],
+        "dependencies": {
+          "xtend": "~2.1.2",
+          "through": "~2.3.4",
+          "esprima-fb": "~3001.1.0-dev-harmony-fb",
+          "jstransform": "~3.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform",
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/src/__tests__",
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/src",
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors/__tests__",
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/visitors"
+        ],
+        "dependencies": {
+          "base62": "0.1.1",
+          "esprima-fb": "~3001.1.0-dev-harmony-fb",
+          "source-map": "0.1.31"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map",
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/build",
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map",
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib",
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/test",
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/source-map"
+        ],
+        "dependencies": {
+          "amdefine": ">=0.0.4"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/react-atom-fork/node_modules/envify/node_modules/xtend"
+        ],
+        "dependencies": {
+          "object-keys": "~0.4.0"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,289 @@
+"*":
+  "exception-reporting":
+    userId: "3f319dcc-a70a-adb5-4fba-4db63e235a6b"
+  "file-types":
+    "^[^.]+.js$": "source.js"
+    ".spec.js$": "source.spec.js"
+    $debug: true
+  welcome:
+    showOnStartup: false
+  core:
+    ignoredNames: [
+      ".meteor"
+      ".git"
+      ".DS_Store"
+      ".bin"
+    ]
+    disabledPackages: [
+      "resize-panes"
+      "themed-settings"
+      "tree-view-filter"
+      "letter-spacing"
+      "stacktrace"
+      "save-session"
+      "scope-inspector"
+      "atom-jade"
+      "atom-lint"
+      "atom-angularjs"
+      "atom-coffee-repl"
+      "visual-bell"
+      "view-tail-large-files"
+      "atom-package-blank"
+      "autocomplete-glsl"
+      "coffee-porter"
+      "figlet"
+      "linter-handlebars"
+      "sass-autocompile"
+      "remote-atom"
+      "web-browser"
+      "language-make"
+      "background-tips"
+      "exception-reporting"
+      "language-clojure"
+      "spell-check"
+      "welcome"
+      "autosave"
+      "ever-notedown"
+      "coffee-refactor"
+      "atom-debugger"
+      "Scratchpad"
+      "language-javascript-semantic"
+      "chary-tree-view"
+      "block-comment"
+      "notebook"
+      "blackspace"
+      "tree-view-open-files"
+      "autohide-tree-view"
+      "vim-mode"
+      "angularjs"
+      "syntax-settings"
+      "js-refactor"
+      "refactor"
+      "hide-tree"
+      "archive-view"
+      "metrics"
+      "styleguide"
+      "project-manager"
+      "meteor-helper"
+      "task-list"
+      "git-grep"
+    ]
+    projectHome: "/Users/cooperm/sites"
+    audioBeep: false
+    excludeVcsIgnoredPaths: false
+    destroyEmptyPanes: false
+    themes: [
+      "atom-material-ui"
+      "apathy-theme"
+    ]
+  editor:
+    invisibles: {}
+    zoomFontWhenCtrlScrolling: true
+    softWrapAtPreferredLineLength: true
+    showInvisibles: true
+    showIndentGuide: true
+    softWrapHangingIndent: 1
+    scrollPastEnd: true
+    softWrap: true
+  linter:
+    showInfoMessages: true
+    clearOnChange: true
+    showErrorInline: false
+    showHighlighting: true
+    underlineIssues: false
+    showErrorTabLine: true
+    defaultErrorTab: "line"
+    showErrorTabProject: false
+    showErrorTabFile: false
+    ignoredMessageTypes: [
+      "no_trailing_whitespace"
+    ]
+  "isotope-ui":
+    spaciousMode: false
+    backgroundColor: "false"
+    fontWeight: "Regular"
+    customBackgroundColorPicker:
+      red: 29
+      green: 29
+      blue: 29
+      alpha: 1
+    customBackgroundColor: true
+  "gist-it":
+    userToken: "3d439a960ec641ff8584fef54eaaf357a29f876b"
+    newGistsDefaultToPrivate: true
+  "linter-scss-lint":
+    scssLintExecutablePath: "/Users/cooperm/.rvm/gems/ruby-2.2.1/bin"
+  "coffee-refactor": {}
+  minimap:
+    scrollAnimation: true
+    absoluteMode: true
+    interline: 3
+    minimapScrollIndicator: false
+  "linter-jscs":
+    verbose: true
+    preset: "google"
+    harmony: true
+    onlyConfig: true
+    messageType: "warning"
+  "atom-lint": {}
+  "sass-autocompile": {}
+  "git-plus": {}
+  "git-blame":
+    ignoreWhiteSpaceDiffs: true
+  atomatigit: {}
+  "atom-beautify":
+    _analyticsUserId: "71ca40bc-1dad-4495-97c3-42211656647f"
+  coffeedocs:
+    SearchLineBelowInstead: true
+  "meteor-helper":
+    mongoURL: "mongodb://localhost:3001"
+    meteorPort: 5555
+  "remote-atom": {}
+  "remote-edit": {}
+  "tree-view-filter": {}
+  "tree-ignore": {}
+  "scope-inspector":
+    userId: "9fdc8d9f2e24d92488f4879b3fdae77c1c96a743"
+    showSidebar: false
+    showBreadcrumbs: false
+  docblockr:
+    per_section_indent: true
+    lower_case_primitives: true
+    short_primitives: true
+    extra_tags_go_after: true
+    deep_indent: true
+    return_description: false
+  "remember-session":
+    x: 0
+    y: 23
+    width: 2560
+    height: 1573
+    treeWidth: 200
+    path: "/Users/cooperm/sites/cfy/app"
+    tabs: "/Users/cooperm/sites/cfy/app/packages.json&&/Users/cooperm/sites/cfy/app/packages.json&&/Users/cooperm/sites/cfy/app/tests/nightwatch/walkthrough/google.js&&/Users/cooperm/sites/cfy/app/convertify/collections/quantify_model.js&&/Users/cooperm/sites/cfy/app/convertify/collections/network_model.coffee&&/Users/cooperm/sites/cfy/app/packages.json&&/Users/cooperm/.atom/init.coffee"
+    selectedTab: 2
+  "save-session":
+    dataSaveFolder: "/Users/cooperm/.atom/packages/save-session/projects"
+    projects: [
+      "/Users/cooperm/.atom/packages/apathy-theme"
+    ]
+    windowX: 0
+    windowY: 0
+    windowWidth: 2560
+    windowHeight: 1600
+    fullScreen: true
+    treeSize: 279
+  "markdown-preview": {}
+  "git-diff": {}
+  "project-manager:showPath": true
+  notebook:
+    removeNotepadOnSavingToProject: true
+  "autocomplete-plus":
+    scopeBlacklist: [
+      ".comment"
+      ".has-selection"
+    ]
+    defaultProvider: "Fuzzy"
+    strictMatching: true
+  "file-icons":
+    onChanges: true
+  pigments: {}
+  "coffee-compile":
+    focusEditorAfterCompile: true
+  "syntax-settings":
+    source:
+      go:
+        editorSettings: {}
+      python:
+        editorSettings: {}
+  "merge-conflicts": {}
+  "letter-spacing": {}
+  emmet:
+    useEmmetComments: false
+    formatLineBreaks: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  "base16-syntax":
+    scheme: "Colors"
+  "apathy-theme":
+    debug: true
+    contentPaddingLeft: 70
+    enableTreeViewStyles: true
+  "git-log": {}
+  "view-tail-large-files": {}
+  tabs:
+    showIcons: true
+    usePreviewTabs: true
+    tabScrolling: true
+  "sublime-tabs":
+    showOnRightSide: true
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+    hideIgnoredNames: true
+  figlet: {}
+  "language-babel": {}
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+  "one-dark-ui":
+    layoutMode: "Spacious"
+  "ever-notedown":
+    sortBy: "Modification Time"
+  "jscs-fixer": {}
+  "node-debugger": {}
+  "git-diff-details":
+    closeAfterCopy: true
+  "status-bar":
+    cursorPositionFormat: "Line %L – Column %C"
+  "linter-jshint": {}
+  "todo-show":
+    ignoreThesePaths: [
+      "*/node_modules/"
+      "*/vendor/"
+      "*/bower_components"
+      "run_nightwatch.sh"
+    ]
+  "autohide-tree-view":
+    touchAreaSize: 400
+    showDelay: 100
+    hideDelay: 100
+    animationSpeed: 2
+    showOn: "hover + click"
+    hiddenWidth: 15
+    pushEditor: true
+    maxWindowWidth: 2000
+  "tree-view-open-files":
+    maxHeight: 0
+  "hide-tree":
+    timeout: 1000
+    animateTime: 50
+  "project-manager": {}
+  Zen:
+    showWordCount: true
+  "color-picker":
+    preferredFormat: "HEX"
+    randomColor: false
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+    eslintPath: "/usr/local/lib/node_modules/eslint"
+  "git-wip":
+    wipOnSave: false
+  term2: {}
+  "atom-material-ui":
+    compactTreeView: true
+    slimScrollbar: true
+    altCmdPalette: true
+    depth: true
+  "unity-ui":
+    showIcons: true
+".ruby.sql":
+  editor:
+    softWrap: false
+".diff.source":
+  editor:
+    softWrapHangingIndent: 1
+".diff":
+  editor:
+    softWrapHangingIndent: 1

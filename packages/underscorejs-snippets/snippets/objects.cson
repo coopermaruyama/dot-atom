@@ -1,0 +1,91 @@
+".source.js":
+  "_.keys":
+    "prefix": "_keys"
+    "body": "_.keys( ${1:object} )"
+  "_.values":
+    "prefix": "_val"
+    "body": "_.values( ${1:object} )"
+  "_.pairs":
+    "prefix": "_pairs"
+    "body": "_.pairs( ${1:object} )"
+  "_.invert":
+    "prefix": "_invert"
+    "body": "_.invert( ${1:object} )"
+  "_.functions":
+    "prefix": "_fn"
+    "body": "_.functions( ${1:object} )"
+  "_.pick":
+    "prefix": "_pick"
+    "body": "_.pick( ${1:object}, ${2:keys} )"
+  "_.omit":
+    "prefix": "_omit"
+    "body": "_.omit( ${1:object}, ${2:keys} )"
+  "_.extend":
+    "prefix": "_ext"
+    "body": "_.extend( ${1:object} )"
+  "_.defaults":
+    "prefix": "_def"
+    "body": "_.defaults( ${1:object}, ${2:defaults} )"
+  "_.clone":
+    "prefix": "_clo"
+    "body": "_.clone( ${1:object} )"
+  "_.tap":
+    "prefix": "_tap"
+    "body": "_.tap( ${1:object} )"
+  "_.has":
+    "prefix": "_has"
+    "body": "_.has( ${1:object}, ${2:key} )"
+  "_.matches":
+    "prefix": "_mat"
+    "body": "_.matches( ${1:attrs} )"
+  "_.property":
+    "prefix": "_prop"
+    "body": "_.property( ${1:key} )"
+  "_.isEqual":
+    "prefix": "_iseq"
+    "body": "_.isEqual( ${1:object}, ${2:other} )"
+  "_.isEmpty":
+    "prefix": "_ise"
+    "body": "_.isEmpty( ${1:object} )"
+  "_.isElement":
+    "prefix": "_isel"
+    "body": "_.isElement( ${1:object} )"
+  "_.isArray":
+    "prefix": "_isa"
+    "body": "_.isArray( ${1:object} )"
+  "_.isObject":
+    "prefix": "_iso"
+    "body": "_.isObject( ${1:object} )"
+  "_.isArguments":
+    "prefix": "_isarg"
+    "body": "_.isArguments( ${1:object} )"
+  "_.isFunction":
+    "prefix": "_isfn"
+    "body": "_.isFunction( ${1:object} )"
+  "_.isString":
+    "prefix": "_istr"
+    "body": "_.isString( ${1:object} )"
+  "_.isNumber":
+    "prefix": "_isnum"
+    "body": "_.isNumber( ${1:object} )"
+  "_.isFinite":
+    "prefix": "_isfin"
+    "body": "_.isFinite( ${1:object} )"
+  "_.isBoolean":
+    "prefix": "_isbool"
+    "body": "_.isBoolean( ${1:object} )"
+  "_.isDate":
+    "prefix": "_isdate"
+    "body": "_.isDate( ${1:object} )"
+  "_.isRegexp":
+    "prefix": "_isreg"
+    "body": "_.isRegexp( ${1:object} )"
+  "_.isNaN":
+    "prefix": "_isnan"
+    "body": "_.isNaN( ${1:object} )"
+  "_.isNull":
+    "prefix": "_isnull"
+    "body": "_.isNull( ${1:object} )"
+  "_.isUndefined":
+    "prefix": "_isu"
+    "body": "_.isUndefined( ${1:value} )"

@@ -1,0 +1,40 @@
+{
+  "name": "language-log",
+  "version": "0.5.0",
+  "description": "Log file syntax highlighting in Atom",
+  "keywords": [
+    "log",
+    "syntax",
+    "highlight",
+    "syslog"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MRodalgaard/language-log"
+  },
+  "homepage": "https://github.com/MRodalgaard/language-log",
+  "license": "MIT",
+  "engines": {
+    "atom": ">= 0.100.0"
+  },
+  "dependencies": {},
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/MRodalgaard/language-log/issues"
+  },
+  "readme": "# Log file syntax highlighting in Atom\n\nAdds syntax highlighting colors for common log formats in Atom. Improving visual grepping.\n\n## Use Case\n\nI often get random logs sent to me for analyzing system behavior. These include crash reports, stack traces, system logs and ad-hoc loggings from different IDEs using dissimilar logging formats. Every time I look for the same keywords (error, exception, exit), check previous line's logging level (info, warning, error) and compare time stamps.\n\nThis Atom grammar helps you quickly extract the log information that is important.\n\n## Supported formats\n\n * [x] Android LogCat\n * [x] Nabto Log\n * [x] iOS Log / Stack trace\n * [x] Firefox crash log (use json raw dump)\n * [x] IDEA log\n * [x] Apache\n * [x] Syslog\n * [x] Common crash logs\n * [x] Common system logs from e.g. ~/Library/Logs/\n\nThere are a whole bunch of standard and non-standard log formats out there. This is an attempt to reach the most common I run in to on a weekly basis.\n\n## Notes\n\nA great companion to this package is [tail](https://github.com/eliasak/tail) for live viewing logs. See [here](https://github.com/mrodalgaard/language-log/issues/1#issue-92097844) for a good way to integrate.\n\n<br>\n\n> Contributions, bug reports and feature requests are very welcome.\n\n> &nbsp; &nbsp; _- Martin_\n",
+  "_id": "language-log@0.5.0",
+  "_shasum": "20310a9ae19ddb61d8ef7a72b2441daeec97bcf0",
+  "_resolved": "file:../d-11566-15881-gkha0u/package.tgz",
+  "_from": "../d-11566-15881-gkha0u/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

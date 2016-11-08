@@ -1,0 +1,97 @@
+'body .feedback':
+  'unset': 'feedback:send'
+
+'atom-workspace':
+  'shift-cmd-H': 'git-plus:menu'
+  'alt-s enter': 'stacktrace:from-selection'
+  'alt-s p': 'stacktrace:paste'
+  'alt-s up': 'stacktrace:to-caller'
+  'alt-s down': 'stacktrace:follow-call'
+
+'atom-text-editor':
+  'ctrl-m': 'bracket-matcher:go-to-matching-bracket'
+
+'atom-text-editor:not([mini])':
+  'cmd-/': 'unset!'
+  'cmd-/': 'editor:toggle-line-comments'
+  'ctrl-b': 'turbo-javascript:wrap-block'
+  'shift-cmd-R': 'symbols-view:toggle-project-symbols'
+  # Prevent tab from expanding using Emmet when autocomplete is open.
+
+
+# ------------------------------------------------------------------------------
+# 'Grammar-Specific' Scopes
+'atom-text-editor[data-grammar~="js"]:not([mini])':
+  'ctrl-cmd-r':'docblockr:reparse'
+  'ctrl-cmd-w':'docblockr-wrap-lines'
+  'ctrl-,': 'turbo-javascript:end-line-comma'
+
+# Stop emmet from hijacking tab from snippet tab stops
+'atom-text-editor[data-grammar="text html basic"]:not([mini]), atom-text-editor[data-grammar~="jade"]:not([mini]), atom-text-editor[data-grammar~="css"]:not([mini]), atom-text-editor[data-grammar~="sass"]:not([mini])':
+  'tab': 'snippets:next-tab-stop'
+
+# ------------------------------------------------------------------------------
+# Specialized scopes. General 'conflicts resolutions' should be handled above.
+
+# Only when an autocomplete dropdown is showing
+'atom-text-editor.autocomplete-active:not([mini])':
+  'enter': 'autocomplete-plus:confirm'
+  'tab': 'autocomplete-plus:confirm'
+
+# Allow ctrl-space to toggle autocomplete-plus
+'atom-text-editor.autocomplete-active':
+  'ctrl-space': 'autocomplete-plus:cancel'
+
+'atom-text-editor:not(.autocomplete-active)':
+  'ctrl-space': 'autocomplete-plus:activate'
+  'tab': 'snippets:next-tab-stop'
+
+# Only inside comment blocks
+'atom-text-editor:not([mini]) .comment':
+  'tab': 'unset!'
+  'tab': 'docblockr:parse-tab'
+
+
+# ------------------------------------------------------------------------------
+# ensure useful core movements don't get overwritten
+'.platform-darwin atom-workspace  atom-text-editor:not([mini])':
+  # Default keybindings
+  # 'ctrl-b': 'core:move-left' ------- Given to 'turbo-js:wrap-block'
+  'ctrl-e': 'editor:move-to-end-of-line'
+  'ctrl-f': 'core:move-right'
+  'ctrl-a': 'editor:move-to-first-character-of-line'
+  'cmd-j': 'editor:join-lines'
+  'ctrl-k': 'editor:cut-to-end-of-line'
+  'alt-d': 'editor:delete-to-end-of-word'
+  'ctrl-shift-K': 'editor:delete-line'
+  'ctrl-cmd-up': 'editor:move-line-up'
+  'ctrl-cmd-down': 'editor:move-line-down'
+  'cmd-enter': 'editor:newline-below'
+  'cmd-<': 'editor:scroll-to-cursor'
+  'alt-enter': 'editor:newline'
+  'alt-cmd-]': 'editor:unfold-current-row'
+'.platform-darwin atom-workspace  atom-text-editor':
+  'cmd-l': 'editor:select-line'
+  'cmd-k cmd-u': 'editor:upper-case'
+  'cmd-k cmd-l': 'editor:lower-case'
+  'alt-shift-left': 'editor:select-to-beginning-of-word'
+  'alt-shift-right': 'editor:select-to-end-of-word'
+  'alt-shift-F': 'editor:select-to-end-of-word'
+  'alt-shift-B': 'editor:select-to-beginning-of-word'
+  'alt-h': 'editor:delete-to-beginning-of-word'
+  'alt-delete': 'editor:delete-to-end-of-word'
+  'ctrl-shift-F': 'core:select-right'
+  'ctrl-shift-B': 'core:select-left'
+  'alt-shift-F': 'editor:select-to-end-of-word'
+  'alt-shift-B': 'editor:select-to-beginning-of-word'
+  'ctrl-shift-W': 'editor:select-word'
+  'ctrl-shift-A': 'editor:select-to-first-character-of-line'
+  'ctrl-shift-E': 'editor:select-to-end-of-line'
+  'ctrl-shift-P': 'core:select-up'
+  'ctrl-shift-N': 'core:select-down'
+  'cmd-k cmd-u': 'editor:upper-case'
+  'cmd-k cmd-l': 'editor:lower-case'
+  # core commands with custom keybindings
+  'alt-w': 'editor:toggle-soft-wrap'
+
+
